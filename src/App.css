@@ -3,8 +3,9 @@
 }
 
 .App-logo {
+  margin-top:1rem;
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 25vmin;
   pointer-events: none;
 }
 
@@ -13,7 +14,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -25,9 +26,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(-360deg);
   }
 }
