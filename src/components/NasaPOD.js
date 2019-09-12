@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import NasaCard from "./components/NasaCard";
+import NasaCard from "./NasaCard";
 import axios from "axios";
-
-
-
 
 
 export default function NasaPOD() {
@@ -24,10 +21,9 @@ export default function NasaPOD() {
     return (
         <div className="info">
               <NasaCard
-                key={nasaPic.data}
                 title={nasaPic.title}
-                imgUrl={nasaPic.hdurl}
-                description={nasaPic.explanation}
+                url={nasaPic.url}
+                explanation={nasaPic.explanation}
                 date={nasaPic.date}
                 copyright={nasaPic.copyright}   
               />
