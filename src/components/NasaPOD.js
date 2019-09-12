@@ -21,9 +21,9 @@ export default function NasaPOD() {
     return (
         <div className="info">
               <NasaCard
-                title={nasaPic.title}
+                titleProp={nasaPic.title}
                 url={nasaPic.url}
-                explanation={nasaPic.explanation}
+                description={nasaPic.explanation}
                 date={nasaPic.date}
                 copyright={nasaPic.copyright} 
                 />

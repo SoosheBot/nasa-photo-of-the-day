@@ -5,7 +5,8 @@ import logo from "../../images/nasa-logo.png";
 const LogoContainer = styled.div`
   display:flex;
   flex-direction:row;
-  justify-content:center;
+  justify-content:space-evenly;
+  align-items:center;
 `;
 const NasaLogo = styled.img`
   margin-top:1rem;
@@ -14,9 +15,11 @@ const NasaLogo = styled.img`
   pointer-events: none;
   display:flex;
   flex-direction:column;
-  justify-content:space-around;
-  align-items:center;
-  `;
+  justify-content:center;
+  align-content:center;
+  object-fit: scale-down;
+  flex-shrink: 2;
+`;
 
 const AppLogo = () => {
     return (
