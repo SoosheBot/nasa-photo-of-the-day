@@ -11,7 +11,7 @@ export default function NasaPOD() {
 
     useEffect(() => {
         axios
-        .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+        .get(`https://api.nasa.gov/planetary/apod?api_key=RLaRimFkvCAjoHXsKyaXBbLeMnGAexyGZo4pkwZ6`)
         .then(response => {
             setNasaPics(response.data) 
             console.log("NASA", response);
