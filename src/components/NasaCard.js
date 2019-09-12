@@ -17,7 +17,6 @@ const TextCard = styled.div`
     }
 `;
 
-
 const ImgCard = styled.img`
     width:75%;
     object-fit: scale-down;
