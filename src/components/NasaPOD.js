@@ -25,9 +25,8 @@ export default function NasaPOD() {
                 url={nasaPic.url}
                 explanation={nasaPic.explanation}
                 date={nasaPic.date}
-                copyright={nasaPic.copyright}   
-              />
-          
+                copyright={nasaPic.copyright} 
+                />
         </div>
     );
 }

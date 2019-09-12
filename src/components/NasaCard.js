@@ -1,17 +1,34 @@
 import React from "react";
+import styled from "styled-components";
+
+const TextCard = styled.div`
+width:100%;
+color: black;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+margin-bottom: 20px;
+`;
+
+
+const ImgCard = styled.img`
+object-fit: scale-down;
+flex-shrink: 2;
+`;
 
 const NasaCard = props => {
     console.log("the props", props);
     return (
-        <div className="info-list">
+
+        <TextCard key={props.data}>
             <h2>Title: {props.title}</h2>
-            <img className="imgURL" alt="NASA images" src={props.url}></img>
-            <p><strong>About this image:</strong> {props.explanation}</p>
+            <ImgCard alt="NASA images" src={props.url}/>
+            <h6>Date: {props.date}</h6>
+            <p><strong>About this image: </strong> {props.explanation}</p>
             <h5>Copyright: {props.copyright}</h5>
-            <h5>Date: {props.date}</h5>
-   
-        </div>
-      );
+        </TextCard>
+    );
 };
 
 export default NasaCard;
