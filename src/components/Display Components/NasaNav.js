@@ -27,7 +27,7 @@ export default function NasaNav (){
     return(
     <NavBar>
         {/* <a href="http://localhost:3000/">Home</a> */}
-        <a href="#">Home</a>
+        <a href="https://nasa-photo-of-the-day-jtyna3tve.now.sh/">Home</a>
         <a href="https://www.nasa.gov/">Learn About Nasa</a>
         <a href="https://en.wikipedia.org/wiki/Astronomical_object">Astronomical Objects</a>
         <a href="https://gph.is/1VK8fyl">Aliens?</a>
