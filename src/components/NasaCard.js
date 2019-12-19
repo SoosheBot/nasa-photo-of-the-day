@@ -29,7 +29,7 @@ const NasaCard = props => {
 
         <TextCard>
             <h2>Title: {props.titleProp}</h2>
-            <ImgCard alt="NASA images" src={props.hdurl}/>
+            <ImgCard alt="NASA image" src={props.hdurl}/>
             <h6>Date: {props.date}</h6>
             <p><strong>About this image: </strong> {props.description}</p>
             <h5>Copyright: {props.copyright}</h5>
